@@ -26,7 +26,7 @@ class Alfaone(unittest.TestCase):
         self.driver.find_element_by_name('password_confirmation').send_keys('123456781')
         self.driver.find_element_by_class_name('form-checkbox').click()
         #time.sleep(10)
-        #self.driver.find_element_by_xpath('/html/body/div/div/div[2]/form/div[8]/button').click()
+        self.driver.find_element_by_xpath('/html/body/div/div/div[2]/form/div[8]/button').click()
         self.assertEqual("Alfa One Capital", self.driver.title, "webpage title is not matching")
 
 
