@@ -17,7 +17,8 @@ class Alfaone(unittest.TestCase):
 
 
     def test_regfprm(self):
-        self.driver.find_element_by_xpath('/html/body/div/div/div[2]/form/div[4]/a[1]').click()
+        self.driver.find_element_by_xpath('//*[@class = "underline text-sm text-gray-600 hover:text-gray-900"][1]')\
+            .click()
         self.driver.find_element_by_name('first_name').send_keys('Mark1')
         self.driver.find_element_by_name('last_name').send_keys('POlo')
         self.driver.find_element_by_name('email').send_keys('mark1sw@mail.ru')
